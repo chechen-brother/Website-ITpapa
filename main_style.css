@@ -4,6 +4,39 @@ h1 {
     line-height: 58px;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: #444444;
+    text-transform: uppercase;
+}
+
+h2 > span {
+    position: relative;
+}
+
+h2 > span::after {
+    content: "";
+    height: 2px;
+    background: #444444;
+    width: 40%;
+    margin-left: -20%;
+    left: 50%;
+    top: 120%;
+    position: absolute;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.services, .works, .team, .blog, .contact, footer {
+    padding: 60px 0;
+}
+
 header {
     background-color: #161c35;
     height: 65px;
@@ -173,4 +206,80 @@ header > .main_wraper {
 
 .main-board_button-link:hover > i {
     color: #FFFFFF;
+}
+
+.box-icon {
+    height: 108px;
+    width: 108px;
+    line-height: 108px;
+    text-align: center;
+    border: 1px solid #161C35;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition-duration: 0.3s;
+}
+
+.box-icon > i {
+    color: #161C35;
+    font-size: 54px;
+    line-height: 108px;
+    transition-duration: 0.3s;
+}
+
+.services_block-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.services_item > a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    font-size: 18px;
+    color: #161C35;
+    border: 1px solid #161C35;
+    border-radius: 0 5px;
+    transition-duration: 0.3s;
+}
+
+.services_item {
+    flex: 0 0 32%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+.services_item > p {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.services_item > h3 {
+    margin: 23px 0;
+    color: #161C35;
+    text-align: center;
+}
+
+.services_item:hover {
+    box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.2);
+}
+
+.services_item:hover .box-icon {
+    background-color: #161C35;
+}
+
+.services_item:hover > .box-icon > i {
+    color: white;
+}
+
+.services_item > a:hover {
+    color: white;
+    background-color: #161C35;
 }
