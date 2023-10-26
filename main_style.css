@@ -259,7 +259,7 @@ header>.main_wraper {
     transition-duration: 0.3s;
 }
 
-.services_item>p {
+.services_item > p {
     font-family: 'Open sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -268,7 +268,7 @@ header>.main_wraper {
     color: #666666;
 }
 
-.services_item>h3 {
+.services_item > h3 {
     margin: 23px 0;
     color: #161C35;
     text-align: center;
@@ -354,4 +354,95 @@ header>.main_wraper {
 .works > .main_wraper, .blog > .main_wraper {
     position: relative;
     z-index: 2;
+}
+
+.team_items {
+    display: flex;
+    padding: 30px 10px 0 10px;
+    justify-content: space-between;
+}
+
+.team_items-person_info {
+    padding: 20px;
+    box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.2);
+}
+
+.team_items-person_info > span {
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.team_items-person {
+    flex: 0 0 255px;
+    color: #666666;
+}
+
+
+.team_items-person > figure {
+    overflow: hidden;
+    position: relative;
+    height: 260px;
+}
+
+.team_items-person > figure > img {
+    transition-duration: 1s;
+}
+
+.team_items-person > figure:hover > img {
+    transform: scale(1.1);
+}
+
+.team_items-person > figure > figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(22, 28, 53, 0);
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.team_items-person > figure:hover > figcaption {
+    background: rgba(22, 28, 53, 0.7);
+}
+
+
+.team_items-person > figure > figcaption > a {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
+.team_items-person > figure > figcaption > a:hover {
+    color: #00D5C3;
+    background: #FFFFFF;
+}
+
+.team_items-person > figure > figcaption > a:first-child {
+    translate: 0 50px;
+}
+
+.team_items-person > figure > figcaption > a:nth-child(2) {
+    translate: 0 90px;
+}
+
+.team_items-person > figure > figcaption > a:last-child {
+    translate: 0 120px;
+}
+
+.team_items-person > figure:hover > figcaption > a {
+    translate: 0 0;
 }
